@@ -1,4 +1,4 @@
-<style>
+<style scoped>
   header {
     color: white;
     font-size: 18px;
@@ -9,7 +9,9 @@
 </style>
 
 <template>
-  <header>{{title}}</header>
+  <div>
+    <header>{{title}}</header>
+  </div>
 </template>
 
 <script>

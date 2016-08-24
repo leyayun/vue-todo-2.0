@@ -23,6 +23,10 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /\.html$/,
+        loader: 'vue-html'
+      },
+      {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file',
         query: {
@@ -30,6 +34,9 @@ module.exports = {
         }
       }
     ]
+  },
+  vue: {
+    // postcss: [require('postcss-cssnext')()]
   },
   devServer: {
     historyApiFallback: true,
